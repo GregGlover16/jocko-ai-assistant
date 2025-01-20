@@ -44,8 +44,12 @@ Usage Instructions
 Prepare the .txt File:
 Manually structure the .txt file following the example above.
 
-Run the format_book_txt_to_json.py Script:
-Use the script to convert the preformatted .txt file into a JSON file.
+Run the the following sctripts to format the data for MongoDb ingestion:
+format_book_txt_to_json.py
+format_youtube_txt_json.py
+format_quotes_txt_json.py
+
+Use these scripts to convert the preformatted .txt file into a JSON file.
 
 Verify the JSON Output:
 
