@@ -97,7 +97,7 @@ Why: You’ll organize the data into collections, similar to tables in relationa
 Once connected in Compass:
 Click “Create Database”.
 Name the database jocko_assistant.
-
+Import JSON files to collections using Compass
 
 
 ## Planned Improvements
