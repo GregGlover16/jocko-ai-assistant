@@ -98,6 +98,19 @@ Once connected in Compass:
 Click “Create Database”.
 Name the database jocko_assistant.
 Import JSON files to collections using Compass
+Indexes Created
+  - `books` Collection:
+    - Text Index on `chapters.chapter`.
+  - `quotes` Collection:
+    - Text Index on `quote`.
+  - `youtube` Collection:
+    - Text Index on `content`.
+Tested Queries
+  - Retrieve quotes by keyword (`$regex` on `quote`).
+  - Retrieve YouTube content by keyword (`$regex` on `content`).
+  - Retrieve book chapters by title (`$regex` on `chapters.chapter`).
+  Aggregations Tested
+  - Count total documents in collections.
 
 
 ## Planned Improvements
