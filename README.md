@@ -111,7 +111,17 @@ Tested Queries
   - Retrieve book chapters by title (`$regex` on `chapters.chapter`).
   Aggregations Tested
   - Count total documents in collections.
-
+Transform the books collection to a chapter-level structure.
+Steps:Converted each chapter into its own document with unique chapter_id and linked by book_id.
+Imported transformed data into MongoDB.
+Updated indexes:
+Text Index: chapter_title.
+Compound Index: book_id, chapter_id.
+Tested queries:
+Search chapter titles by keyword.
+Retrieve chapters by book_id.
+Aggregation to count chapters per book.
+Outcome: The books collection is now optimized for chapter-level queries and ready for RAG workflows.
 
 ## Planned Improvements
 A preprocessing script will be developed to automate this manual formatting step in the future. This script will:
