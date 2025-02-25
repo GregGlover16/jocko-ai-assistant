@@ -1,4 +1,12 @@
 # Jocko AI Assistant
+A Jocko Willink-inspired AI assistant for leadership, discipline, and self-improvement.
+
+## Folder Structure
+- `data/`: Contains JSON files for Jocko's books, transcripts, and quotes.
+- `backend/`: FastAPI code for the backend.
+- `frontend/`: Streamlit/Next.js code for the frontend.
+- `scripts/`: Utility scripts for embeddings and other tasks.
+
 ## Project Overview
 This project aims to build a conversational AI assistant that mimics Jocko Willink's tone and knowledge. Features include:
 - Context-aware chat responses in Jocko’s voice and tone.
