@@ -1,0 +1,8 @@
+openai
+pinecone-client
+langchain
+fastapi
+uvicorn
+python-dotenv
+pymongo
+streamlit
