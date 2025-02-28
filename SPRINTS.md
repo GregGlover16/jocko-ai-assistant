@@ -38,3 +38,24 @@
 1. Created a Python virtual environment using `python -m venv venv`.
 2. Installed dependencies (`openai`, `pinecone-client`, `langchain`, etc.) using `pip install -r requirements.txt`.
 3. Verified the structure of JSON files in the `data/` folder.
+
+
+## Sprint 3 - Generate Embeddings for JSON Files
+**Goal**: Use OpenAI to generate embeddings for Jocko’s books, quotes, and YouTube transcripts, and store them in Pinecone.
+
+### Steps
+1. Set up OpenAI and Pinecone API keys in `.env`.
+2. Created a script (`scripts/generate_embeddings.py`) to:
+   - Load JSON files from the `data/` folder.
+   - Extract text using a custom `extract_text` function.
+   - Split text into chunks using LangChain’s `RecursiveCharacterTextSplitter`.
+   - Generate embeddings using OpenAI’s `text-embedding-ada-002` model.
+   - Store embeddings in Pinecone.
+3. Tested the script to ensure it handles large inputs and different JSON formats.
+4. Updated the GitHub repository with the completed work.
+
+### Files Added/Modified
+- `scripts/generate_embeddings.py`
+- `.env`
+- `requirements.txt`
+- `SPRINTS.md`
