@@ -59,3 +59,49 @@
 - `.env`
 - `requirements.txt`
 - `SPRINTS.md`
+
+
+## Sprint 4 - FastAPI Setup and Base Code
+**Goal**: Set up a FastAPI backend with basic endpoints.
+
+### Steps
+1. Created a `setup_main.py` file in the `backend` folder with the following endpoints:
+   - `/chat`: Chat with the Jocko AI assistant.
+   - `/summary/{book_id}/{chapter_id}`: Retrieve a book summary.
+   - `/quiz/{question_id}`: Retrieve a quiz question.
+   - `/quiz/submit`: Submit a quiz answer.
+   - `/quote`: Retrieve a daily Jocko quote.
+2. Run the FastAPI App
+   -  Run the FastAPI app using Uvicorn:
+
+uvicorn main:app --reload
+
+   -  Open your browser and go to:
+http://127.0.0.1:8000/ to see the welcome message.
+http://127.0.0.1:8000/docs to access the interactive API documentation (Swagger UI).
+
+3. Tested the endpoints using FastAPI’s interactive documentation.
+   -  Chat with Jocko:
+Go to the /chat endpoint in Swagger UI.
+Enter a message (e.g., {"message": "How can I be more disciplined?"}).
+Submit the request and check the response.
+   -  Get a Book Summary:
+Go to the /summary/{book_id}/{chapter_id} endpoint.
+Enter a book_id and chapter_id (e.g., book_id=book1, chapter_id=chapter1).
+Submit the request and check the response.
+   -  Get a Quiz Question:
+Go to the /quiz/{question_id} endpoint.
+Enter a question_id (e.g., q1).
+Submit the request and check the response.
+   -  Submit a Quiz Answer:
+Go to the /quiz/submit endpoint.
+Enter a user_id, question_id, and answer (e.g., {"user_id": "user1", "question_id": "q1", "answer": "Take full responsibility"}).
+Submit the request and check the response.
+   -  Get a Daily Quote:
+Go to the /quote endpoint.
+Submit the request and check the response.
+
+### Files Added/Modified
+- `backend/setu_main.py`
+- `requirements.txt`
+- `SPRINTS.md`

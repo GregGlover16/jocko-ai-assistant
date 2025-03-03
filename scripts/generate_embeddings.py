@@ -26,7 +26,7 @@ def load_json_files(data_dir):
                 data.extend(json.load(f))
     return data
 
-# Extract text based on the type of data
+# Extract text based on the type of data, this will change depending on the format of JSON files
 def extract_text(item):
     if "content" in item:  # For YouTube transcripts
         return item["content"]
